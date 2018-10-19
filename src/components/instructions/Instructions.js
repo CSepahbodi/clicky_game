@@ -16,14 +16,14 @@ class Instructions extends Component {
     render() {
         const dialog1 = (
             <div className="arrow_box justify-content-md-center text-center">
-                <p className="m-4">Welcome to my clicky game :^{")"}</p>
+                <p className="m-4">You have arrived at..... CLICKY GAME!!! :^{")"}</p>
                 <button className="btn btn-primary mb-3" onClick={this.startDialog}>How do I play?!</button>
             </div>
         );
 
         const dialog2 = (
             <div className="arrow_box justify-content-md-center text-center">
-                <p className="m-4">Click the pics unclicked before, there is no other way to raise your score. Beware, click a pic clicked before and say goodbye to your precious score :^{")"}.</p>
+                <p className="m-4">Click a picture. Try to remember which image you clicked. If you click the same picture after they are scrambled... you lose. If you click a different picture you gain a point. The game goes on forever... unlike life... {")"}.</p>
                 <button className="btn btn-primary mb-3" onClick={this.props.endInstructions}>I get it, lets begin!</button>
             </div>
         );
