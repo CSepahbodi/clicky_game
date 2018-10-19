@@ -42,7 +42,7 @@ class App extends Component {
         this.setState({clickedPictures: newClickedPics, score: this.state.score + 1, pictures: shuffledPics, correctGuess: 1});
       }
       else {
-        console.log("You lose :(");
+        console.log("Boooooo you lose!!! :(");
         this.state.score > this.state.topScore ? this.setState({topScore: this.state.score, score: 0}) : this.setState({score: 0});
         this.setState({clickedPictures: [], pictures: shuffledPics, correctGuess: 0});   
       }
@@ -55,7 +55,7 @@ class App extends Component {
         <nav className="shadow-lg navbar navbar-dark bg-dark ">
           <ul className="p-0 m-0 w-100">
             <li><span className="navbar-brand mb-0 h1">Clicky the picky!</span></li>
-            {this.state.correctGuess === 1 ? (<li className="correct">You guessed correctly!</li>) : this.state.correctGuess === 3 ? ((<li className="spin">:^{")"}</li>)) : (<li className="wrong">You guessed incorrectly!</li>)}
+            {this.state.correctGuess === 1 ? (<li className="correct">You have guessed.........wisely!</li>) : this.state.correctGuess === 3 ? ((<li className="spin">{")"}</li>)) : (<li className="wrong">You have guessed.......poorly!</li>)}
             <li>
               Score: <span>{ this.state.score }</span> | Top Score: <span>{ this.state.topScore }</span>
             </li>
